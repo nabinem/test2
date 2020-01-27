@@ -13,7 +13,7 @@
     "require": {
         "php": ">=5.5.9",
         "illuminate/support": "5.*|^6",
-        "test6034/guzzlehttp66-test": "1.0.*",
+        "test6034/guzzlehttp6-test": "1.0.*",
         "monolog/monolog": "^1.12|^2.0"
     },
     "require-dev": {
