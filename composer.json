@@ -1,0 +1,49 @@
+{
+    "name": "test6034/l-fcm-test",
+    "description": "Test Test",
+    "keywords": ["Test"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Test Test",
+            "email": "test@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.*|^6",
+        "test6034/GuzzleHttp66-test": "1.*",
+        "monolog/monolog": "^1.12|^2.0"
+    },
+    "require-dev": {
+        "mockery/mockery" : "0.9.*",
+        "phpunit/phpunit" : "4.7.*",
+        "satooshi/php-coveralls": "dev-master",
+        "laravel/laravel": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelFCM\\": "src/",
+            "LaravelFCM\\Mocks\\": "tests/mocks"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelFCM\\FCMServiceProvider"
+            ],
+            "aliases": {
+                "FCM": "LaravelFCM\\Facades\\FCM",
+                "FCMGroup": "LaravelFCM\\Facades\\FCMGroup"
+            }
+        }
+    }
+}
